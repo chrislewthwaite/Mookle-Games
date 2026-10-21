@@ -20,15 +20,6 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<nav class="rail" aria-label="Sections">
-  <a class="rail-home" href="/" aria-label="Mookle Games home"><img src="img/mookle-m.webp" alt="" width="52" height="38"></a>
-  <a href="#game" data-nav="game" title="The game"><svg aria-hidden="true"><use href="#i-home"/></svg><span class="sr">The game</span></a>
-  <a href="#crew" data-nav="crew" title="Crew and critters"><svg aria-hidden="true"><use href="#i-crew"/></svg><span class="sr">Crew and critters</span></a>
-  <a href="#arsenal" data-nav="arsenal" title="Arsenal"><svg aria-hidden="true"><use href="#i-aim"/></svg><span class="sr">Arsenal</span></a>
-  <a href="#world" data-nav="world" title="World"><svg aria-hidden="true"><use href="#i-map"/></svg><span class="sr">World</span></a>
-  <a href="#guardians" data-nav="guardians" title="Guardians"><svg aria-hidden="true"><use href="#i-crown"/></svg><span class="sr">Guardians</span></a>
-  <a href="#trailer" data-nav="trailer" title="Trailer"><svg aria-hidden="true"><use href="#i-play"/></svg><span class="sr">Trailer</span></a>
-</nav>
 
 <header class="top">
   <a class="brand" href="/"><img src="img/mookle-logo.webp" alt="Mookle Games" width="130" height="37"></a>
@@ -36,11 +27,12 @@
     <a href="#game" data-nav="game">The game</a>
     <a href="#crew" data-nav="crew">Crew</a>
     <a href="#arsenal" data-nav="arsenal">Arsenal</a>
+    <a href="#powers" data-nav="powers">Powers</a>
     <a href="#world" data-nav="world">World</a>
     <a href="#guardians" data-nav="guardians">Guardians</a>
     <a href="#trailer" data-nav="trailer">Trailer</a>
   </nav>
-  <span class="soon"><svg aria-hidden="true"><use href="#i-play"/></svg>Coming soon to Google Play</span>
+  <span class="soon"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Coming soon<span class="soon-where"> to Google Play</span></span></span>
 </header>
 
 <main id="main">
@@ -62,6 +54,40 @@
     </div>
     <img class="hero-rook" src="img/rook-run.webp" alt="Rook running into action with a blaster" width="779" height="1000">
     <a class="scroll-cue" href="#crew" aria-label="Scroll to the crew"><svg aria-hidden="true"><use href="#i-down"/></svg></a>
+  </section>
+
+  <section id="how" class="sec how" data-navkey="game" aria-labelledby="how-title">
+    <header class="sec-head">
+      <p class="eyebrow">Endless, random, yours</p>
+      <h2 id="how-title">How it plays</h2>
+      <p class="sec-lead">Explore, fight, loot, change your build, beat a guardian, go deeper. Every expedition is a fresh roll of the dice.</p>
+    </header>
+    <ol class="loop">
+      <li class="step">
+        <figure class="step-art art-world"><img src="img/BI06-s.webp" alt="Cloudstep Bluffs, one of the eight biomes" width="520" height="293" loading="lazy" decoding="async"></figure>
+        <span class="step-n">1</span>
+        <h3>A new world every expedition</h3>
+        <p>Wildfall never ends. Each expedition grows a fresh planet from a random seed: open spaces, winding routes, loops and forks, hidden caches, enemy camps and world events, across eight biomes that blend into each other. Turn back and it's all still there.</p>
+      </li>
+      <li class="step">
+        <figure class="step-art art-loot"><img src="img/WP08.webp" alt="A Pebblepop grenade launcher" width="900" height="607" loading="lazy" decoding="async"></figure>
+        <span class="step-n">2</span>
+        <h3>Loot that's never the same twice</h3>
+        <p>Every weapon you find is rolled on the spot: its level, its rarity and its powers. About one ordinary drop in 2,000 is Mythic, and guardians always drop Rare or better.</p>
+      </li>
+      <li class="step">
+        <figure class="step-art art-build"><img src="img/PK04.webp" alt="Orbit Pods perk" width="240" height="232" loading="lazy" decoding="async"><img src="img/PK03.webp" alt="Zap Halo perk" width="240" height="189" loading="lazy" decoding="async"><img src="img/PK02.webp" alt="Hot Foot perk" width="240" height="231" loading="lazy" decoding="async"></figure>
+        <span class="step-n">3</span>
+        <h3>Build as you go</h3>
+        <p>Level up mid-run and pick one of three perk cards. Stack up to six special perks, push them to MAX, and pair them up for combos. Perks scale with your gun, so they're strong on every weapon.</p>
+      </li>
+      <li class="step">
+        <figure class="step-art art-grow"><img src="img/rook-workshop.webp" alt="Rook at the Wayward Workshop" width="478" height="560" loading="lazy" decoding="async"></figure>
+        <span class="step-n">4</span>
+        <h3>Grow between runs</h3>
+        <p>When a run ends, the gear stays on the planet but your Scrap comes home. Spend it in the Wayward Workshop on permanent tech across six branches, and in the Perk Lab for an extra perk card and an extra perk slot.</p>
+      </li>
+    </ol>
   </section>
 
   <section id="crew" class="sec" aria-labelledby="crew-title">
@@ -95,6 +121,287 @@
         <li style="--r:#a86bf5"><b>Epic</b><span>3 powers</span></li>
         <li style="--r:#ffc740"><b>Legendary</b><span>4 powers</span></li>
         <li style="--r:#ff736b"><b>Mythic</b><span>6 powers</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="powers" class="sec powers" aria-labelledby="powers-title">
+    <header class="sec-head">
+      <p class="eyebrow">Mix, stack, combo</p>
+      <h2 id="powers-title">Powers &amp; perks</h2>
+      <p class="sec-lead">Two ways to build. Powers come rolled on the weapons you salvage; perks are picked as you level up mid-run. Put the right ones together and things get wonderfully silly.</p>
+    </header>
+
+    <div class="block">
+      <h3 class="block-title">Weapon powers</h3>
+      <p class="block-lead">Uncommon weapons roll 1 power, Rare 2, Epic 3, Legendary 4 and Mythic 6, each at rank I, II or III. Tech in the Workshop can push a power past what the gun rolled.</p>
+      <ul class="power-grid">
+        <li class="power"><img src="img/P01.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Sproutshot</b><span>+1 projectile per rank</span></li>
+        <li class="power"><img src="img/P02.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Drillbite</b><span>Pierces 1 more target per rank</span></li>
+        <li class="power"><img src="img/P03.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Bumper Rounds</b><span>Ricochets to a new target within 4 m, once per rank</span></li>
+        <li class="power"><img src="img/P04.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Forkseed</b><span>Hits split into fragments: 3 at rank I, 5 at rank III</span></li>
+        <li class="power"><img src="img/P05.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Firefly Guidance</b><span>Seeking shots</span></li>
+        <li class="power"><img src="img/P06.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Pollen Link</b><span>Chains to 1 more target per rank</span></li>
+        <li class="power"><img src="img/P07.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Party Pop</b><span>Kills trigger bursts</span></li>
+        <li class="power"><img src="img/P08.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Lucky Spark</b><span>+3% crit chance and +10% crit damage per rank</span></li>
+        <li class="power"><img src="img/P09.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Sizzle Sap</b><span>Acid damage over time that stacks up to 5 times</span></li>
+        <li class="power"><img src="img/P10.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Campfire Carpet</b><span>Shots leave fire on the ground</span></li>
+        <li class="power"><img src="img/P11.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Compost Charge</b><span>10% of each hit per rank turns to corrosion</span></li>
+        <li class="power"><img src="img/P12.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Fresh-Mag Fizz</b><span>Empty the magazine and the reload sends out a pulse</span></li>
+        <li class="power"><img src="img/P13.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Pocket Orbit</b><span>Gravity wells that pull enemies in</span></li>
+        <li class="power"><img src="img/P14.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Firefly Rockets</b><span>Launches mini rockets: 1 per rank, up to 3</span></li>
+        <li class="power"><img src="img/P15.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Piplets</b><span>Deploys little Pip drones that fight with you</span></li>
+        <li class="power"><img src="img/P16.webp" alt="" width="128" height="128" loading="lazy" decoding="async"><b>Snackback</b><span>Heals 1% of the damage you deal per rank</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3 class="block-title">Example builds</h3>
+      <p class="block-lead">Any weapon can roll any power that suits it, so builds like these turn up by luck.</p>
+      <ul class="builds">
+        <li class="build">
+          <figure><img src="img/WP09.webp" alt="Sunspitter" width="900" height="608" loading="lazy" decoding="async"></figure>
+          <div>
+            <h4>Firefly Orchard</h4>
+            <p class="build-gun">Sunspitter with</p>
+            <ul class="build-powers"><li><img src="img/P04.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Forkseed</li><li><img src="img/P14.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Firefly Rockets</li><li><img src="img/P06.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Pollen Link</li></ul>
+            <p>Plasma hits split into fragments, mini rockets peel off as you fire, and pollen arcs chain between targets.</p>
+          </div>
+        </li>
+        <li class="build">
+          <figure><img src="img/WP04.webp" alt="Thumpkin" width="900" height="411" loading="lazy" decoding="async"></figure>
+          <div>
+            <h4>Pinball Picnic</h4>
+            <p class="build-gun">Thumpkin with</p>
+            <ul class="build-powers"><li><img src="img/P03.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Bumper Rounds</li><li><img src="img/P01.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Sproutshot</li><li><img src="img/P07.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Party Pop</li></ul>
+            <p>Extra pellets in every blast, each one bouncing on to a new target, and anything it finishes off goes pop.</p>
+          </div>
+        </li>
+        <li class="build">
+          <figure><img src="img/WP10.webp" alt="Ribbonray" width="900" height="579" loading="lazy" decoding="async"></figure>
+          <div>
+            <h4>Little Solar System</h4>
+            <p class="build-gun">Ribbonray with</p>
+            <ul class="build-powers"><li><img src="img/P13.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Pocket Orbit</li><li><img src="img/P15.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Piplets</li><li><img src="img/P11.webp" alt="" width="128" height="128" loading="lazy" decoding="async">Compost Charge</li></ul>
+            <p>A beam that drops gravity wells, Piplet drones joining the fight, and hits that keep eating away as corrosion.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3 class="block-title">Perk cards</h3>
+      <p class="block-lead">On every level-up, pick one of three cards. Hold up to six special perks; each goes up to level 8, and at 8/8 it hits MAX with an extra effect. Perks you already hold turn up more often, so you can finish a build.</p>
+      <ul class="perk-grid">
+        <li class="perk ">
+          <figure><img src="img/PK01.webp" alt="" width="240" height="196" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Ember Rounds</h4>
+          <p class="perk-line">Hits can set enemies alight</p>
+          <p class="perk-num">10% chance · burns 12% gun damage</p>
+          <p class="perk-max"><b>MAX · Wildfire Rounds</b>Every hit burns, and fire spreads</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK02.webp" alt="" width="240" height="231" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Hot Foot</h4>
+          <p class="perk-line">You leave burning footprints</p>
+          <p class="perk-num">Each burns 15% gun damage</p>
+          <p class="perk-max"><b>MAX · Blaze Trail</b>Longer trail, flares when you stop</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK03.webp" alt="" width="240" height="189" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Zap Halo</h4>
+          <p class="perk-line">A crackling ring zaps enemies</p>
+          <p class="perk-num">2.5 m ring · 10% gun damage</p>
+          <p class="perk-max"><b>MAX · Storm Halo</b>A stunning nova every 3 s</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK04.webp" alt="" width="240" height="232" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Orbit Pods</h4>
+          <p class="perk-line">A seed pod orbits and bops enemies</p>
+          <p class="perk-num">Each bop: 25% gun damage</p>
+          <p class="perk-max"><b>MAX · Comet Ring</b>6 pods fly out and back every 4 s</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK05.webp" alt="" width="240" height="211" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Buddy Bots</h4>
+          <p class="perk-line">A little bot fights beside you</p>
+          <p class="perk-num">Shoots for 12% gun damage</p>
+          <p class="perk-max"><b>MAX · Bot Squad</b>4 bots with piercing double shots</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK06.webp" alt="" width="240" height="217" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Chain Spark</h4>
+          <p class="perk-line">Crits jump lightning to enemies</p>
+          <p class="perk-num">Jumps to 1 · +2% crit chance</p>
+          <p class="perk-max"><b>MAX · Thunder Call</b>Lightning strikes every 4 s</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK07.webp" alt="" width="240" height="223" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Frost Fizz</h4>
+          <p class="perk-line">Hits can chill and slow enemies</p>
+          <p class="perk-num">15% chance · +10% damage taken</p>
+          <p class="perk-max"><b>MAX · Deep Freeze</b>Chilled 3 times? Frozen solid!</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK08.webp" alt="" width="240" height="235" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Pop Rockets</h4>
+          <p class="perk-line">A homing mini rocket every 3 s</p>
+          <p class="perk-num">Each blast: 45% gun damage</p>
+          <p class="perk-max"><b>MAX · Fireworks Finale</b>Rockets burst into bomblets</p>
+        </li>
+        <li class="perk is-def">
+          <figure><img src="img/PK09.webp" alt="" width="240" height="235" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Defence</p>
+          <h4>Bramble Shell</h4>
+          <p class="perk-line">Thorns burst out when you&#x27;re hit</p>
+          <p class="perk-num">60% gun damage · take 5% less</p>
+          <p class="perk-max"><b>MAX · Briar Fortress</b>Every 10 s, block a hit and burst</p>
+        </li>
+        <li class="perk is-def">
+          <figure><img src="img/PK10.webp" alt="" width="240" height="222" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Defence</p>
+          <h4>Bubble Guard</h4>
+          <p class="perk-line">A bubble blocks one hit</p>
+          <p class="perk-num">Recharges every 14 s</p>
+          <p class="perk-max"><b>MAX · Bubble Burst</b>Pops blast enemies away</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK11.webp" alt="" width="240" height="223" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Kaboom Buds</h4>
+          <p class="perk-line">Defeated enemies can burst</p>
+          <p class="perk-num">10% chance · 60% gun damage</p>
+          <p class="perk-max"><b>MAX · Chain Blooms</b>Bursts set off more bursts</p>
+        </li>
+        <li class="perk ">
+          <figure><img src="img/PK12.webp" alt="" width="240" height="206" loading="lazy" decoding="async"></figure>
+          <p class="perk-cat">Attack</p>
+          <h4>Sprout Turret</h4>
+          <p class="perk-line">Plants a turret that shoots</p>
+          <p class="perk-num">Every 12 s · 30% gun damage</p>
+          <p class="perk-max"><b>MAX · Twin Sprouts</b>2 turrets that stay till replaced</p>
+        </li>
+      </ul>
+      <p class="stats-title">Plus thirteen stat perks with no level limit</p>
+      <ul class="stat-chips">
+        <li><b>Spicy Spark</b>Damage +8%</li>
+        <li><b>Hotwire</b>Fire rate +6%</li>
+        <li><b>Lunchpack</b>Max health +10%</li>
+        <li><b>Shieldberry</b>Max shield +10%</li>
+        <li><b>Fixer Fern</b>Heals 0.3% a second</li>
+        <li><b>Spring Sap</b>Move speed +5%</li>
+        <li><b>Fast Fingers</b>Reload 5% faster</li>
+        <li><b>Big Pocket</b>Magazine +10%</li>
+        <li><b>Lucky Leaf</b>Crit chance +2%</li>
+        <li><b>Magnet Morsel</b>Pickup reach +15%</li>
+        <li><b>Sappy Seconds</b>Burn &amp; chill time +10%</li>
+        <li><b>Boom Bloom</b>Blast size +8%</li>
+        <li><b>Bright Idea</b>Experience +8%</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3 class="block-title">Combos</h3>
+      <p class="block-lead">Hold the right two special perks and they team up. Fifteen combos to find:</p>
+      <ul class="combo-grid">
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK01.webp" alt="Ember Rounds" width="240" height="196" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK02.webp" alt="Hot Foot" width="240" height="231" loading="lazy" decoding="async"></div>
+          <h4>Wildfire</h4>
+          <p class="combo-of">Ember Rounds + Hot Foot</p>
+          <p>Hits on burning enemies leave a fire patch under them</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK01.webp" alt="Ember Rounds" width="240" height="196" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK07.webp" alt="Frost Fizz" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Steam Blast</h4>
+          <p class="combo-of">Ember Rounds + Frost Fizz</p>
+          <p>Hitting an enemy that is burning and chilled bursts steam</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK06.webp" alt="Chain Spark" width="240" height="217" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK07.webp" alt="Frost Fizz" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Superconductor</h4>
+          <p class="combo-of">Chain Spark + Frost Fizz</p>
+          <p>Lightning jumps once more and hits chilled enemies twice as hard</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK03.webp" alt="Zap Halo" width="240" height="189" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK06.webp" alt="Chain Spark" width="240" height="217" loading="lazy" decoding="async"></div>
+          <h4>Thunderstorm</h4>
+          <p class="combo-of">Zap Halo + Chain Spark</p>
+          <p>Halo zaps jump to enemies just outside the ring</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK04.webp" alt="Orbit Pods" width="240" height="232" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK02.webp" alt="Hot Foot" width="240" height="231" loading="lazy" decoding="async"></div>
+          <h4>Comet Pods</h4>
+          <p class="combo-of">Orbit Pods + Hot Foot</p>
+          <p>Pods set alight whatever they bop</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK04.webp" alt="Orbit Pods" width="240" height="232" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK03.webp" alt="Zap Halo" width="240" height="189" loading="lazy" decoding="async"></div>
+          <h4>Static Pods</h4>
+          <p class="combo-of">Orbit Pods + Zap Halo</p>
+          <p>Pods zap enemies as they pass</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK05.webp" alt="Buddy Bots" width="240" height="211" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK01.webp" alt="Ember Rounds" width="240" height="196" loading="lazy" decoding="async"></div>
+          <h4>Fire Team</h4>
+          <p class="combo-of">Buddy Bots + Ember Rounds</p>
+          <p>Bots shoot fire bolts</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK05.webp" alt="Buddy Bots" width="240" height="211" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK08.webp" alt="Pop Rockets" width="240" height="235" loading="lazy" decoding="async"></div>
+          <h4>Bot Rockets</h4>
+          <p class="combo-of">Buddy Bots + Pop Rockets</p>
+          <p>Each bot also fires a mini rocket every 4 s</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK08.webp" alt="Pop Rockets" width="240" height="235" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK11.webp" alt="Kaboom Buds" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Cluster Bloom</h4>
+          <p class="combo-of">Pop Rockets + Kaboom Buds</p>
+          <p>Rocket kills always burst</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK08.webp" alt="Pop Rockets" width="240" height="235" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK06.webp" alt="Chain Spark" width="240" height="217" loading="lazy" decoding="async"></div>
+          <h4>Spark Rockets</h4>
+          <p class="combo-of">Pop Rockets + Chain Spark</p>
+          <p>Rocket blasts jump lightning</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK10.webp" alt="Bubble Guard" width="240" height="222" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK09.webp" alt="Bramble Shell" width="240" height="235" loading="lazy" decoding="async"></div>
+          <h4>Thorny Bubble</h4>
+          <p class="combo-of">Bubble Guard + Bramble Shell</p>
+          <p>A popped bubble fires a ring of thorns</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK10.webp" alt="Bubble Guard" width="240" height="222" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK07.webp" alt="Frost Fizz" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Ice Bubble</h4>
+          <p class="combo-of">Bubble Guard + Frost Fizz</p>
+          <p>A popped bubble freezes enemies round you</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK09.webp" alt="Bramble Shell" width="240" height="235" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK02.webp" alt="Hot Foot" width="240" height="231" loading="lazy" decoding="async"></div>
+          <h4>Burning Thorns</h4>
+          <p class="combo-of">Bramble Shell + Hot Foot</p>
+          <p>Thorns set enemies alight</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK12.webp" alt="Sprout Turret" width="240" height="206" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK11.webp" alt="Kaboom Buds" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Turret Party</h4>
+          <p class="combo-of">Sprout Turret + Kaboom Buds</p>
+          <p>Turret kills always burst</p>
+        </li>
+        <li class="combo">
+          <div class="combo-pair"><img src="img/PK12.webp" alt="Sprout Turret" width="240" height="206" loading="lazy" decoding="async"><span aria-hidden="true">+</span><img src="img/PK07.webp" alt="Frost Fizz" width="240" height="223" loading="lazy" decoding="async"></div>
+          <h4>Frost Turret</h4>
+          <p class="combo-of">Sprout Turret + Frost Fizz</p>
+          <p>Turret shots chill</p>
+        </li>
       </ul>
     </div>
   </section>

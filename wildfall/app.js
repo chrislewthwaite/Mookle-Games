@@ -202,16 +202,24 @@
     show(0);
   }
 
-  // the rail and the tabs follow the section in view
+  // the tabs follow the section crossing a line a third of the way down the screen ("How it plays" counts as the game);
+  // on a phone, where the tabs scroll sideways, the lit one slides into view
   function navFollow() {
     const links = [...document.querySelectorAll('[data-nav]')];
-    const seen = new Map();
+    const bar = $('.tabs');
     const io = new IntersectionObserver(entries => {
-      entries.forEach(e => seen.set(e.target.id, e.intersectionRatio));
-      let best = null, top = 0;
-      seen.forEach((r, id) => { if (r > top) { top = r; best = id; } });
-      if (best) links.forEach(a => a.classList.toggle('is-active', a.dataset.nav === best));
-    }, { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] });
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const key = e.target.dataset.navkey || e.target.id;
+        links.forEach(a => {
+          const on = a.dataset.nav === key;
+          a.classList.toggle('is-active', on);
+          if (on && bar.scrollWidth > bar.clientWidth)
+            bar.scrollTo({ left: bar.scrollLeft + a.getBoundingClientRect().left - bar.getBoundingClientRect().left - (bar.clientWidth - a.offsetWidth) / 2,
+                           behavior: 'smooth' });
+        });
+      });
+    }, { rootMargin: '-33% 0px -66% 0px' });
     document.querySelectorAll('main > section[id]').forEach(s => io.observe(s));
   }
 
