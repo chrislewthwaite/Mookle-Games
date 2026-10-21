@@ -2,10 +2,10 @@
    weapons are their level-one base stats, critters their base health, speed and attack, biomes their biomes.csv row. */
 (() => {
   'use strict';
-  const POSED = '?v=2';           // the posed pictures (21 October) replace ones browsers may still hold under the same names
+  const POSED = '?v=3';           // the posed pictures (21 October) replace ones browsers may still hold under the same names
 
   const CREW = [
-    { id: 'rook', name: 'Rook', group: 'Crew', img: 'img/ch-rook.webp', thumb: 'img/t-rook.webp',
+    { id: 'rook', name: 'Rook', group: 'Crew', img: `img/ch-rook.webp${POSED}`, thumb: 'img/t-rook.webp',
       tag: 'Pilot-salvager', meta: ['Crew', '1.7 m tall'],
       text: "When the Wayward goes down, Rook grabs a blaster, a thin toolkit and Pip, and heads out to salvage everything that isn't nailed down. One thumb runs, the other aims.",
       facts: ['Runs, strafes and aims at the same time', 'Gear for suit, visor, boots and core', 'Levels up mid-run and picks perk cards'] },
