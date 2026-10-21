@@ -2,6 +2,7 @@
    weapons are their level-one base stats, critters their base health, speed and attack, biomes their biomes.csv row. */
 (() => {
   'use strict';
+  const POSED = '?v=2';           // the posed pictures (21 October) replace ones browsers may still hold under the same names
 
   const CREW = [
     { id: 'rook', name: 'Rook', group: 'Crew', img: 'img/ch-rook.webp', thumb: 'img/t-rook.webp',
@@ -29,7 +30,7 @@
     ['EN11', 'Kite Raider', 'Aerial harasser', '1.7 m', 'Scrapjack Raiders', 90, 2.6, 7, 'A hovering robot raider with a Buzzburst. It flies low, never out of reach.', 'A jet flare and a lane marker come before each burst. Track it, or use seeking shots.'],
     ['EN12', 'Boulderbelly', 'Heavy bruiser', '2.3 m', 'Tanglelife', 280, 1.4, 22, 'A slow, big rock creature that shoves its way in and slams the ground.', 'It raises its fists over a ring with a safe outer edge. Get out of the ring.'],
   ].map(([id, name, tag, size, faction, hp, speed, attack, text, tip]) => ({
-    id, name, group: 'Critters', img: `img/${id}.webp`, thumb: `img/t-${id}.webp`, tag,
+    id, name, group: 'Critters', img: `img/${id}.webp${POSED}`, thumb: `img/t-${id}.webp${POSED}`, tag,
     meta: [faction, size.includes('wide') ? size : `${size} tall`], text, tip,
     stats: [['Health', hp, 280, `${hp}`], ['Speed', speed, 3.7, `${speed} m/s`], ['Attack', attack, 22, `${attack}`]],
   }));
@@ -44,7 +45,7 @@
     ['BO07', 'Admiral Anvil', 'Sunken Campus', 'Gravity construction titan', '3.7 m tall', 'A campus maintenance robot still enforcing long-abandoned safety rules.', 'Gravity rings, magnet mines and a shoulder charge.', 'Read the safe ring before you move: inside it or outside it, never on it.'],
     ['BO08', 'Stormbloom', 'Stormgarden', 'Storm-network guardian', '4.0 m tall', 'A native flower colony fused with the planet\'s weather relay.', 'Staggered spokes, seed bombardments and short energy lanes.', 'The petals glow before each pattern. Step through the open gaps.'],
   ].map(([id, name, biome, tag, size, text, attacks, tip]) => ({
-    id, name, group: 'Guardians', img: `img/${id}.webp`, thumb: `img/t-${id}.webp`, tag,
+    id, name, group: 'Guardians', img: `img/${id}.webp${POSED}`, thumb: `img/t-${id}.webp${POSED}`, tag,
     meta: [`Guardian of ${biome}`, size], text, attacks, tip,
   }));
 
